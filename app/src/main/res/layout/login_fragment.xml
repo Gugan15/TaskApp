@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ED9411">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_radius"
+            android:layout_marginLeft="@dimen/card_radius"
+            android:layout_marginEnd="@dimen/card_radius"
+            android:layout_marginRight="@dimen/card_radius"
+            android:layout_marginBottom="@dimen/btn_padding"
+            android:fontFamily="@font/almendra"
+            android:gravity="center|center_horizontal"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/btn_padding"
+            android:paddingRight="@dimen/btn_padding"
+            android:singleLine="false"
+            android:text="@string/log_in"
+            android:textColor="#E8D8D8"
+            android:textSize="70sp"
+            android:textStyle="bold|italic"
+            app:autoSizeMaxTextSize="70sp"
+            app:autoSizeMinTextSize="50sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+
+        <com.example.taskapp.util.customview.EditTextCustomView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="@dimen/card_margin"
+            android:layout_height="@dimen/btn_margin_bottom"
+            android:autofillHints="Hu"
+            android:ems="10"
+            app:customHint="@string/email"
+            app:customInputType="textPersonName"
+            app:customTextColor="@color/white"
+            app:customTextSize="20"
+            app:endIconDrawable="@drawable/ic_baseline_error_outline_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.300"
+            app:startIconDrawable="@drawable/ic_baseline_email_24" />
+
+        <com.example.taskapp.util.customview.EditTextCustomView
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="@dimen/card_margin"
+            android:layout_height="@dimen/btn_margin_bottom"
+            android:ems="10"
+            app:customHint="@string/phone_number"
+            app:customInputType="phone"
+            app:customTextSize="20"
+            app:endIconDrawable="@drawable/ic_baseline_error_outline_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintVertical_bias="0.100"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_corner"
+            android:shadowColor="@color/white"
+            android:shadowRadius="0.7"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:enabled="false"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:elevation="@dimen/btn_margin_bottom"
+            android:text="@string/login_symbol"
+            android:textColor="#54000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintVertical_bias="0.100" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/sign_up_ed_mg_top"
+            android:layout_weight="1"
+            android:contentDescription="@string/contact_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5"
+            app:layout_constraintVertical_bias="0.400"
+            app:srcCompat="@drawable/circle_crop" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/didnt_text"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.300"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.800" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="#ED9411"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.800" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

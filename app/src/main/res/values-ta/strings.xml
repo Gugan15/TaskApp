@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">டாஸ்க் செயலி</string>
+    <string name="phone_number">ஃபோன்</string>
+    <string name="email">மின்னஞ்சல் முகவரி</string>
+    <string name="log_in">உள்நுழைக</string>
+    <string name="dummy_image">போலி படம்</string>
+    <string name="name">பெயர்</string>
+    <string name="e_mail">மின்னஞ்சல்</string>
+    <string name="auto_login">தானாக உள்நுழை</string>
+    <string name="didnt_text">"கணக்கு இல்லை? "</string>
+    <string name="sign_up">பதிவுபெறு</string>
+    <string name="register">பதிவுசெய்</string>
+    <string name="remember">என்னை நினைவில் கொள்ளுங்கள்</string>
+    <string name="bottom">கீழ் தாள்</string>
+    <string name="example_bottom_sheet" >இது ஒரு உதாரணம் கீழ் தாள் நடத்தை</string>
+    <string name="share">பங்கிட்டுக்கொள்</string>
+    <string name="selected">தேர்ந்தெடுக்கப்பட்ட</string>
+    <string name="list">பட்டியல்</string>
+    <string name="map">நட்டுப்படம்</string>
+    <string name="webview">வலைகாட்சி</string>
+    <string name="youtube_player">யூடியூப்</string>
+    <string name="url">இணையதள முகவரியை உள்ளிடவும்</string>
+    <string name="search">தேடு</string>
+    <string name="contacts">தொடர்புகள்</string>
+    <string name="contact_name">தொடர்பு பெயர்</string>
+    <string name="contact_image">படம் படம்</string>
+    <string name="first_name">முதல் பெயர்</string>
+    <string name="last_name">கடைசி பெயர்</string>
+    <string name="biometric_title">பயன்பாட்டிற்கான பயோமெட்ரிக் உள்நுழைவு</string>
+    <string name="biometric_sub_title">உங்கள் பயோமெட்ரிக் நம்பிக்கைச்சான்று பயன்படுத்தி உள்நுழையவும்</string>
+    <string name="biometric_button">கணக்கு கடவுச்சொல்லை ப் பயன்படுத்து</string>
+    <string name="title">பட்டப்பெயர்</string>
+    <string name="body">உருவாக்கு</string>
+    <string name="add">சேர்</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_exchange"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="@string/exchange" />
+    <item
+        android:id="@+id/menu_encrypt"
+        android:icon="@drawable/ic_baseline_lock_24"
+        android:title="@string/encrypt" />
+    <item
+        android:id="@+id/menu_contacts"
+        android:icon="@drawable/ic_baseline_contacts_24"
+        android:title="@string/contacts" />
+    <item
+        android:id="@+id/menu_insta"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="@string/insta" />
+    <item
+        android:id="@+id/menu_onboard"
+        android:title="Onboard" />
+
+</menu>

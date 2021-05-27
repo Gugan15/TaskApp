@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextCustomView">
+        <attr name="startIconDrawable" format="reference"/>
+        <attr name="endIconDrawable" format="reference"/>
+        <attr name="customInputType" format="string"/>
+        <attr name="customHint" format="string"/>
+        <attr name="customTextColor" format="color"/>
+        <attr name="customTextSize" format="float"/>
+    </declare-styleable>
+</resources>

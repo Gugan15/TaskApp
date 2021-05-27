@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btn_margin_bottom"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/rounded_corner_edit"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/custom_start_image_view"
+            android:layout_width="@dimen/card_radius"
+            android:layout_height="@dimen/card_radius"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_padding"
+            android:layout_marginLeft="@dimen/btn_padding"
+            android:layout_weight="1"
+            android:contentDescription="@string/add"
+            app:srcCompat="@drawable/ic_baseline_email_24" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/custom_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="@dimen/btn_padding"
+            android:layout_marginLeft="@dimen/btn_padding"
+            android:layout_weight="4"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:gravity="bottom"
+            android:textColor="@android:color/white"
+            android:textColorHint="#C3C0C0" />
+
+        <ImageView
+            android:id="@+id/custom_end_image_view"
+            android:layout_width="@dimen/card_radius"
+            android:layout_height="@dimen/card_radius"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_padding"
+            android:layout_marginLeft="@dimen/btn_padding"
+            android:layout_marginEnd="@dimen/btn_padding"
+            android:layout_marginRight="@dimen/btn_padding"
+            android:layout_weight="1"
+            android:contentDescription="@string/add"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_baseline_error_outline_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/custom_helper_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btn_padding"
+        android:layout_marginLeft="@dimen/btn_padding"
+        android:layout_weight="1"
+        android:text="@string/helper_text"
+        android:visibility="invisible" />
+
+</LinearLayout>

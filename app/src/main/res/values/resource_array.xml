@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resource_name">
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+        <item>Item4</item>
+        <item>Item5</item>
+        <item>Item6</item>
+        <item>Item7</item>
+        <item>Item8</item>
+        <item>Item9</item>
+        <item>Item10</item>
+        <item>Item11</item>
+        <item>Item12</item>
+        <item>Item13</item>
+        <item>Item14</item>
+        <item>Item15</item>
+        <item>Item16</item>
+        <item>Item17</item>
+        <item>Item18</item>
+
+    </string-array>
+    <string-array name="resource_address">
+        <item>com.example1@abc.in</item>
+        <item>com.example2@abc.in</item>
+        <item>com.example3@abc.in</item>
+        <item>com.example4@abc.in</item>
+        <item>com.example5@abc.in</item>
+        <item>com.example6@abc.in</item>
+        <item>com.example7@abc.in</item>
+        <item>com.example8@abc.in</item>
+        <item>com.example9@abc.in</item>
+        <item>com.example10@abc.in</item>
+        <item>com.example11@abc.in</item>
+        <item>com.example12@abc.in</item>
+        <item>com.example13@abc.in</item>
+        <item>com.example14@abc.in</item>
+        <item>com.example15@abc.in</item>
+        <item>com.example16@abc.in</item>
+        <item>com.example17@abc.in</item>
+        <item>com.example18@abc.in</item>
+    </string-array>
+    <string-array name="resource_phone">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="currency">
+        <item>AED</item>
+        <item>QAR</item>
+        <item>SAR</item>
+    </string-array>
+</resources>

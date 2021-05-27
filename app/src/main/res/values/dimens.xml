@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_field_margin">20dp</dimen>
+    <dimen name="card_radius">30dp</dimen>
+    <dimen name="card_margin">350dp</dimen>
+    <dimen name="btn_margin_bottom">80dp</dimen>
+    <dimen name="btn_padding">15dp</dimen>
+    <dimen name="sign_up_ed_mg_top">60dp</dimen>
+    <dimen name="email_textSize">100dp</dimen>
+    <dimen name="icon_dimension">45dp</dimen>
+</resources>
