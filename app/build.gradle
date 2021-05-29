@@ -9,6 +9,9 @@ plugins {
 }
 
 android {
+    lintOptions {
+        checkReleaseBuilds false
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
     buildFeatures{
@@ -32,6 +35,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        cit {
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+        sit {
+            debuggable true
+        }
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
