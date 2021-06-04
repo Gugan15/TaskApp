@@ -27,10 +27,18 @@ pipeline{
                                                         "return['CIT','SIT']"
                                                 ]
                                             ]
-                                        ],
+                                            ],
+
+                                            [$class: 'DynamicReferenceParameter',
+                                                                               choiceType: 'ET_ORDERED_LIST',
+                                                                               description: 'Select the  AMI based on the following infomration',
+                                                                               name: 'Image Information',
+                                                                               referencedParameters: 'Env',
+                                                                               script:
+                                                                                   [$class: 'GroovyScript',
+                                                                                   script: 'return["Could not get AMi Information"]',
                                          script: [
-                                                                                        classpath: [],
-                                                                                        sandbox: false,
+
                                                                                         script: '''
                                                                                         if (Env.equals("CIT")){
                                                                                             clean assembleDebug assembleCit
@@ -42,7 +50,8 @@ pipeline{
                                                                                         '''
                                                                                     ]
                                                                             ]
-                                                                        ],
+                                                                        ]
+                                                                        ])
         }
 
         }
