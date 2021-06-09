@@ -6,7 +6,7 @@ pipeline {
     stages{
        stage("GradleBuild"){
        steps{
-                 withGradle(gradle:'gradle_4_2_1') {
+                 withGradle() {
                    sh './gradlew clean assembleDebug'
                  }
                }
