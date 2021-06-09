@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-       stage('Gradle Build') {
+       stage('GradleBuild') {
            if (isUnix()) {
                sh './gradlew clean assembleDebug'
            } else {
