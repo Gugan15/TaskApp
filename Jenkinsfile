@@ -20,7 +20,7 @@ environment {
 }
 stage("ArchiveBuild"){
 steps{
-archiveArtifacts artifacts:'app/build/outputs/apk/${params.Environment.toLowerCase()}/app-${params.Environment.toLowerCase()}.apk'
+archiveArtifacts artifacts:'app/build/outputs/apk/%params.Environment.toLowerCase()%/app-%params.Environment.toLowerCase()%.apk'
 }
 }
        }
