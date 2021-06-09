@@ -5,14 +5,14 @@ environment {
 
 }
  parameters{
-           choice(name: 'Environment',choices: 'Cit\nSit\nRelease',description: 'Build Type?')
+           choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
     agent any
     stages{
        stage("GradleBuild"){
        steps{
                  withGradle() {
-                   bat './gradlew clean assemble${parameters.Environment}'
+                   bat './gradlew clean assemble${params.Environment}'
                  }
                }
 
