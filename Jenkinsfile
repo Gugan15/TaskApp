@@ -19,7 +19,7 @@ environment {
 }
 stage("ArchiveBuild"){
 steps{
-archiveArtifacts artifacts:'app-debug.apk'
+archiveArtifacts artifacts:'app/build/outputs/apk/debug/app-debug.apk'
 }
 }
        }
