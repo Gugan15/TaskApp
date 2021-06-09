@@ -13,14 +13,14 @@ environment {
        steps{
                  withGradle() {
                  echo "${params.Environment}"
-                   bat './gradlew clean assemble$params.Environment'
+                   bat './gradlew clean assemble%params.Environment%'
                  }
                }
 
 }
 stage("ArchiveBuild"){
 steps{
-archiveArtifacts artifacts:'app/build/outputs/apk/$params.Environment.toLowerCase()/app-$params.Environment.toLowerCase().apk'
+archiveArtifacts artifacts:'app/build/outputs/apk/*/app-*.apk'
 }
 }
        }
