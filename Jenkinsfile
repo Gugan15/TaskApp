@@ -13,7 +13,7 @@ environment {
        steps{
                  withGradle() {
                  echo "${params.Environment}"
-                   bat './gradlew clean assemble$params.Environment'
+                   bat './gradlew clean assemble${params.Environment}'
                  }
                }
 
