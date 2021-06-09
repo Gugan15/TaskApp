@@ -12,6 +12,7 @@ environment {
        stage("GradleBuild"){
        steps{
                  withGradle() {
+                 echo "${params.Environment}"
                    bat './gradlew clean assemble$params.Environment'
                  }
                }
