@@ -6,7 +6,11 @@ pipeline {
     stages{
        stage("GradleBuild"){
        steps{
-               bat 'gradlew.bat clean assembleDebug'
+               node {
+                 withGradle {
+                   sh './gradlew build'
+                 }
+               }
            }
 }
        }
