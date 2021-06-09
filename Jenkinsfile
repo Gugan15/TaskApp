@@ -7,7 +7,7 @@ pipeline {
        stage("GradleBuild"){
        steps{
                  withGradle() {
-                   sh './gradlew clean assembleDebug'
+                   bat './gradlew clean assembleDebug'
                  }
                }
 
