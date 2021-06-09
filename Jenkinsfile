@@ -12,7 +12,7 @@ environment {
        stage("GradleBuild"){
        steps{
                  withGradle() {
-                   bat './gradlew clean assemble${params.Environment}'
+                   bat './gradlew clean assemble$params.Environment'
                  }
                }
 
