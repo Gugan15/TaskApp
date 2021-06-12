@@ -26,7 +26,9 @@ allprojects {
         jcenter()
     }
 }
-
+tasks.withType(JavaCompile) {
+    options.failOnError(false)
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
