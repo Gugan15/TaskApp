@@ -1,6 +1,6 @@
 pipeline {
 environment{
- PATH = ${env.ComSpec}
+ PATH = "${env.ComSpec}"
 }
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
