@@ -6,7 +6,6 @@ pipeline {
     stages{
        stage("GradleBuild"){
        steps{
-       script{
                  withGradle() {
 
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
