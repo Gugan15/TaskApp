@@ -1,5 +1,10 @@
 pipeline {
-
+    environment{
+    script{
+    if(!isUnix()){
+    PATH = "C:\\WINDOWS\\SYSTEM32"
+    }}
+    }
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
@@ -12,7 +17,6 @@ pipeline {
                     if(isUnix()){
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
 }else{
- set env.PATH = "C:\\WINDOWS\\SYSTEM32"
 
 bat "./gradlew clean assembleDebug assemble"+params.Environment
 }
