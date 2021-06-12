@@ -13,7 +13,9 @@ pipeline {
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
                     }
                     catch(Exception e){
+                    environment{
                      PATH = "C:\\WINDOWS\\SYSTEM32"
+                     }
                    bat './gradlew clean assembleDebug assemble'+params.Environment
                  }
                  }
