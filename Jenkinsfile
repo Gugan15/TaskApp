@@ -1,7 +1,4 @@
 pipeline {
-environment{
- PATH = "${env.ComSpec}"
-}
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
@@ -11,14 +8,9 @@ environment{
        steps{
        script{
                  withGradle() {
-                    try{
-                    sh "./gradlew clean assembleDebug assemble${params.Environment}"
-                    }
-                    catch(Exception e){
 
-                   bat './gradlew clean assembleDebug assemble'+params.Environment
-                 }
-                 }
+                    sh "./gradlew clean assembleDebug assemble${params.Environment}"
+
                }
 }
 }
