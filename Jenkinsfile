@@ -1,10 +1,5 @@
 pipeline {
-    environment{
-    script{
-    if(!isUnix()){
-    PATH = "C:\\WINDOWS\\SYSTEM32"
-    }}
-    }
+
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
