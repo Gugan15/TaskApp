@@ -7,6 +7,7 @@ pipeline {
     stages{
        stage("GradleBuild"){
        steps{
+       script{
                  withGradle() {
                     try{
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
@@ -17,7 +18,7 @@ pipeline {
                  }
                  }
                }
-
+}
 }
 stage("ArchiveBuild"){
 steps{
