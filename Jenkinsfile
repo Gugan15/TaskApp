@@ -8,7 +8,7 @@ pipeline {
        steps{
                  withGradle() {
                  echo "${params.Environment}"
-                   bash './gradlew clean assembleDebug'
+                   sh './gradlew clean assembleDebug'
 
                  }
                }
