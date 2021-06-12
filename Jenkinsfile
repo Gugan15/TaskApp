@@ -12,9 +12,8 @@ pipeline {
                     if(isUnix()){
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
 }else{
-environment{
- PATH = "C:\\WINDOWS\\SYSTEM32"
-}
+ set env.PATH = "C:\\WINDOWS\\SYSTEM32"
+
 bat "./gradlew clean assembleDebug assemble"+params.Environment
 }
     }           }
