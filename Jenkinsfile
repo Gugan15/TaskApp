@@ -1,7 +1,4 @@
 pipeline {
-environment {
-    PATH = "C:\\WINDOWS\\SYSTEM32"
-}
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
@@ -11,8 +8,8 @@ environment {
        steps{
                  withGradle() {
                  echo "${params.Environment}"
-                   bat './gradlew clean assembleDebug assemble'+params.Environment
-                   bat 'echo %params.Environment'
+                   bat './gradlew clean assembleDebug
+
                  }
                }
 
