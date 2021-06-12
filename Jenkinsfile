@@ -1,5 +1,9 @@
 pipeline {
+environment {
 
+    PATH = "C:\\WINDOWS\\SYSTEM32"
+
+}
  parameters{
            choice(name: 'Environment',choices: ['Cit','Sit','Release'],description: 'Build Type?')
     }
