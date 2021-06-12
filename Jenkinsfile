@@ -8,10 +8,10 @@ pipeline {
        stage("GradleBuild"){
        steps{
                  withGradle() {
-                    if(isUnix()){
+                    try{
                     sh "./gradlew clean assembleDebug assemble${params.Environment}"
                     }
-                    else{
+                    catch{
                      PATH = "C:\\WINDOWS\\SYSTEM32"
                    bat './gradlew clean assembleDebug assemble'+params.Environment
                  }
